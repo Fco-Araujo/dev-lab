@@ -3,14 +3,17 @@
 int main(){
 
 
-    int idade,renda,dependentes;
+   int idade,dependentes;
+
+   float renda;
+   
 
 
     printf("Digite a sua idade! \n");
     scanf("%d",&idade);
 
     printf("Digite a sua renda! \n");
-    scanf("%d",&renda);
+    scanf("%f",&renda);
 
     printf("Digite o numero de dependentes! \n");
     scanf("%d",&dependentes);
