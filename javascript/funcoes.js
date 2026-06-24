@@ -1,39 +1,71 @@
-function cadastrarUsuario(){
-    console.log("Antes de iniciar, faça o seu cadastro!");
-}
-// cadastrarUsuario();
+// function cadastrarUsuario(){
+//     console.log("Antes de iniciar, faça o seu cadastro!");
+// }
+// // cadastrarUsuario();
 
-function bemVindo (nome){
-    console.log(`Seja bem vindo ao sistema ${nome}. Seu usuario foi cadastrado com sucesso!`);
-}
-// bemVindo("Francisco");
+// function bemVindo (nome){
+//     console.log(`Seja bem vindo ao sistema ${nome}. Seu usuario foi cadastrado com sucesso!`);
+// }
+// // bemVindo("Francisco");
 
-function saldoConta (deposito,saque){
-    let saldo = deposito - saque
-    console.log(`Seu saldo em conta é ${saldo}`)
-    return saldo;
-}
-// saldoConta (1000,700);
+// function saldoConta (deposito,saque){
+//     let saldo = deposito - saque
+//     console.log(`Seu saldo em conta é ${saldo}`)
+//     return saldo;
+// }
+// // saldoConta (1000,700);
 
-function main (){
-    cadastrarUsuario();
-    bemVindo("jose");
-    saldoConta(1000,700)
-}
-// main()
+// function main (){
+//     cadastrarUsuario();
+//     bemVindo("jose");
+//     saldoConta(1000,700)
+// }
+// // main()
 
-function exibirMensagem (nome, idade){
-    console.log(`Meu nome é ${nome} e eu tenho ${idade} anos.`);
-}
-// exibirMensagem("Francisco", 23);
-// exibirMensagem("José", 27);
-// exibirMensagem("Augusto", 50);
+// function exibirMensagem (nome, idade){
+//     console.log(`Meu nome é ${nome} e eu tenho ${idade} anos.`);
+// }
+// // exibirMensagem("Francisco", 23);
+// // exibirMensagem("José", 27);
+// // exibirMensagem("Augusto", 50);
 
 
-function somarNumeros(numero1, numero2){
-    total = numero1 + numero2;
-    console.log(`a soma dos dois valores é ${total}`);
+// function somarNumeros(numero1, numero2){
+//     total = numero1 + numero2;
+//     console.log(`a soma dos dois valores é ${total}`);
+// }
+//     num1 = 10;
+//     num2 = 3;
+// // somarNumeros(num1,num2);
+
+
+// // subtrair 
+
+// function mostrarValor(x,operacao){
+//     return operacao(x);
+// }
+// function subtrair(numero){
+//     return numero - 5;
+// }
+// const resultadoSub = mostrarValor(10,subtrair);
+// console.log(resultadoSub);
+
+
+// // dobrar
+
+// function mostrarValorSoma(operacao,numero){
+//         return operacao(numero)   //js procura a funcao somar e aplica o valor que foi passado para ela como arguemnto
+//         }
+//         function somar(valor){
+//             return valor +10;
+//             }
+
+//             const resultado = mostrarValorSoma(somar,10);
+//             console.log(resultado);
+
+
+let saudacao = function(nome){
+    console.log(nome)
 }
-    num1 = 10;
-    num2 = 3;
-somarNumeros(num1,num2);
+saudacao("francisco")
+
