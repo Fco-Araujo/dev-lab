@@ -88,25 +88,30 @@ console.log(listaValores);
 // Exercício 8: Verifique se o objeto Venda possui a propriedade desconto. Retorne a
 // verificação diretamente em uma mensagem fixa.
 
-const verificarPropiedade = Object.hasOwn(venda,"desconto")
-console.log(verificarPropiedade);
-
+function verificarPropiedade (){
+    return `A verificação foi concluida com ${venda.hasOwnProperty("descon")}`
+}
+console.log(verificarPropiedade());
 // Exercício 9: Crie um novo objeto NovaVenda que contenha as mesmas propriedades e
 // valores de Venda, mas com um produto e quantidade diferentes. Exiba o novo objeto
 // NovaVenda.
 
-let novaVenda = {}
-Object.assign(novaVenda,venda);
-Object.defineProperty(novaVenda,"produto",{value:"Guarda-Roupa"});
-Object.defineProperty(novaVenda,"quantidade",{value:2});
-console.log(novaVenda);
+const novaVenda = Object.assign({},venda,{
+    produto: "guarda-roupa",
+    quantidade: 100
+})
+console.log(novaVenda)
 
 
 // Exercício 10: Adicione uma nova propriedade data ao objeto Venda, definindo-a como não
 // enumerável. Exiba todas as propriedades do objeto Venda e, em seguida, exiba o valor da
 // nova propriedade data separadamente.
 
-venda.data = "24/06/2026"
+
+Object.defineProperty(venda,"data",{value: "24/06/2026",
+    enumerable: false,
+});
+
 console.log(venda);
 console.log(venda.data);
 
@@ -117,10 +122,10 @@ console.log(venda.data);
 let descontoEspecial = Object.create(venda);
 descontoEspecial.desconto = 20;
 
-console.log(descontoEspecial);
+// console.log(descontoEspecial);
 
 // Exercício 12: Remova a propriedade desconto do objeto Venda. Verifique se a propriedade
 // foi removida com sucesso e exiba as propriedades restantes do objeto.
 
 delete venda.desconto;
-console.log(venda);
+// console.log(venda);
